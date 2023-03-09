@@ -54,25 +54,25 @@ class MessageBubble extends StatelessWidget {
             ),
             child: Wrap(
               children: [
-                if (!isSentByMe)
+                // if (!isSentByMe)
                  
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: AnimatedTextKit(
-                      animatedTexts: [
-                        TypewriterAnimatedText(
-                          message,
-                          speed: const Duration(milliseconds: 100),
-                          textStyle: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16.0,
-                          ),
-                        ),
-                      ],
-                      totalRepeatCount: 1,
-                      pause: const Duration(milliseconds: 300),
-                    ),
-                  ),
+                //   Padding(
+                //     padding: const EdgeInsets.all(8.0),
+                //     child: AnimatedTextKit(
+                //       animatedTexts: [
+                //         TypewriterAnimatedText(
+                //           message,
+                //           speed: const Duration(milliseconds: 100),
+                //           textStyle: TextStyle(
+                //             color: Colors.black,
+                //             fontSize: 16.0,
+                //           ),
+                //         ),
+                //       ],
+                //       totalRepeatCount: 1,
+                //       pause: const Duration(milliseconds: 300),
+                //     ),
+                //   ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(

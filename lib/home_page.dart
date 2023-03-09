@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                           leading: CircleAvatar(
                             child: Text('Evan'),
                           ),
-                          title: Text('会话 $index'),
+                          title: Text('Contact $index'),
                           subtitle: Text('Last message from Contact $index'),
                           onTap: () {
                             // TODO: 点击列表项后打开会话窗口
@@ -142,14 +142,14 @@ class _HomePageState extends State<HomePage> {
                                 _scrollToBottom();
                               });
 
-                              // setState(() {
-                              //   _messages.add(OpenAIMessage(
-                              //     content: '正在输入...',
-                              //     time: DateTime.now(),
-                              //     isSentByMe: false,
-                              //   ));
-                              //   _scrollToBottom();
-                              // });
+                              setState(() {
+                                _messages.add(OpenAIMessage(
+                                  content: '正在输入...',
+                                  time: DateTime.now(),
+                                  isSentByMe: false,
+                                ));
+                                _scrollToBottom();
+                              });
 
                               // 调用OpenAI聊天API
                               final openAIChat = OpenAIChat();
