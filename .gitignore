@@ -44,4 +44,4 @@ app.*.map.json
 /android/app/release
 
 
-/assets/openai-key.json
+assets/openai-key.json
