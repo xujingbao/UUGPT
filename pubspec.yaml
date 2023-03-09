@@ -30,10 +30,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  openai_client: 0.0.6
+  openai_client: 0.0.7
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  animated_text_kit: ^4.2.2
+  
 
 dependency_overrides:
   meta: ^1.9.0
@@ -61,6 +63,7 @@ flutter:
   uses-material-design: true
   assets: 
     - assets/openai-key.json
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
